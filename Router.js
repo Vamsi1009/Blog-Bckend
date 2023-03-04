@@ -13,7 +13,7 @@ router.get('/getUsersALL',getAllDetailController);
 router.get('/getId/:id',getUserController);
 
 
-router.post('/api/bloguser',BlogUsercontroller);
+router.post('/api/bloguser',Authentication,BlogUsercontroller);
 router.post('/api/BlogIntrest',Authentication,BlogIntrestController);
 router.post('/api/blogId/:userId',Authentication, getBlogUserIdController);
 router.post('/getinterests',Authentication,getAllInterestsController)
